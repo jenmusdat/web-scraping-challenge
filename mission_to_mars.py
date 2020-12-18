@@ -1,14 +1,29 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[17]:
+
+
 from splinter import Browser
 from bs4 import BeautifulSoup
-import pandas as pd
 import time
+
+
+# In[2]:
 
 
 executable_path = {'executable_path': 'chromedriver.exe'}
 browser = Browser('chrome', **executable_path, headless=False)
 
+
+# In[3]:
+
+
 url = 'https://mars.nasa.gov/news/'
 browser.visit(url)
+
+
+# In[4]:
 
 
 html = browser.html
@@ -16,9 +31,15 @@ html = browser.html
 soup = BeautifulSoup(html, 'html.parser')
 
 
+# In[5]:
+
+
 news = soup.find_all("div", class_="content_title")[1]
 news_title = news.get_text()
 news_title
+
+
+# In[6]:
 
 
 news_paragraph = soup.find_all("div", class_="article_teaser_body")[0]
@@ -26,12 +47,21 @@ news_p = news_paragraph.get_text()
 news_p
 
 
+# In[7]:
+
+
 url="https://www.jpl.nasa.gov/spaceimages/?search=&category=Mars"
 browser.visit(url)
 browser.links.find_by_partial_text("FULL IMAGE").click()
 
 
+# In[8]:
+
+
 browser.links.find_by_partial_text("more info").click()
+
+
+# In[9]:
 
 
 html = browser.html
@@ -42,12 +72,17 @@ image_href=image.find_all("a", href = True)[0]
 image_href["href"]
 
 
+# In[10]:
+
 
 featured_image_url = 'https://www.jpl.nasa.gov'+image_href["href"]
 featured_image_url
 
 
+# In[11]:
 
+
+import pandas as pd
 
 
 # In[12]:
