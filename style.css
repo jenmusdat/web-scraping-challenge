@@ -1,0 +1,17 @@
+.featured_img {
+  max-width: 600px;
+  max-height: 600px;
+  width: 100%;
+  height: auto;
+}
+
+.facts_font {
+  font-size: 12px;
+}
+
+.hemisphere_img {
+  max-width: 500px;
+  max-height: 500px;
+  width: 100%;
+  height: auto;
+}

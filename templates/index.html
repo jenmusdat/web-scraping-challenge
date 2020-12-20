@@ -12,22 +12,27 @@
 <body>
     <div class="container-fluid">
         <div class="jumbotron text-center">
-            <h1>MarsFixed</h1>
+            <h1>Mission to Mars</h1>
             <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Get Data!</a></p>
         </div>
         <h3> {{ mars.news_title }}</h3>
         <h3> {{ mars.news_p }}</h3>
         <br>
-        <img src="{{ mars.featured_image }}">
-        <br>
-        {{mars.facts|safe}}
-        <br>
-        {% for hemisphere in mars.hemispheres %}
-        <h2>{{ hemisphere.title }}</h2>
-        <br>
-        <img src=" {{ hemisphere.img_url }}">
-        {% endfor %}
-    </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img class="featured_img" src="{{ mars.featured_image }}">
+                </div>
+            </div>
+            <br>
+            {{mars.facts|safe}}
+            <br>
+            {% for hemisphere in mars.hemispheres %}
+            <h2>{{ hemisphere.title }}</h2>
+            <br>
+            <img src=" {{ hemisphere.img_url }}">
+            {% endfor %}
+        </div>
 </body>
 
 </html>
