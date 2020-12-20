@@ -45,9 +45,9 @@ def scrape_info():
     featured_image_url = 'https://www.jpl.nasa.gov'+image_href["href"]
     featured_image_url
 
-nasa_df=pd.read_html("https://space-facts.com/mars/")[0]
-nasa_df = nasa_df.rename(columns={nasa_df.columns[0]: "Description", nasa_df.columns[1]: "Mars"}).set_index("Description")
-nasa_df 
+    nasa_df=pd.read_html("https://space-facts.com/mars/")[0]
+    nasa_df = nasa_df.rename(columns={nasa_df.columns[0]: "Description", nasa_df.columns[1]: "Mars"}).set_index("Description")
+    nasa_df=nasa_df.to_html(classes = "table table-striped")
 
 
     hemisphere_image_urls = []
