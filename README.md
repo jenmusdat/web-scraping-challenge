@@ -14,3 +14,4 @@ In order to run this assignment you need to use:
 
 The final html looked like:
 
+![HTML_top](images/HTML_top.JPG)
