@@ -31,9 +31,12 @@ The final html looked like:
 ![html_mid](images/html_mid.JPG)
 ![html_bottom](images/html_bottom.JPG)
 
-Reflections
+# Reflections
 
 
+This was very challenging and I am grateful to have been given extra time to complete this assignment. It would have been extremely hard to accomplish in the same week as the ETL project.
+
+:tree:
 
 
 ### Submitted by:
