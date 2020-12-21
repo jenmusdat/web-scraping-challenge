@@ -16,3 +16,4 @@ The final html looked like:
 
 ![HTML_top](images/HTML_top.JPG)
 ![html_mid](images/html_mid.JPG)
+![html_bottom](images/html_bottom.JPG)
