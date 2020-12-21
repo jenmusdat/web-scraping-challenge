@@ -17,3 +17,9 @@ The final html looked like:
 ![HTML_top](images/HTML_top.JPG)
 ![html_mid](images/html_mid.JPG)
 ![html_bottom](images/html_bottom.JPG)
+
+
+### Submitted by:
+### Jenny Kaylor
+### 12/20/2020
+
